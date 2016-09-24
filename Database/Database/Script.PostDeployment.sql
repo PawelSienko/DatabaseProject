@@ -9,8 +9,9 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+
 BULK INSERT Country
-FROM '$(CountriesFilePath)'
+FROM '$(DataBasePath)\$(CountriesFileName)'
 WITH 
   (
     FIELDTERMINATOR = ',',

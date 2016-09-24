@@ -4,14 +4,15 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>DataBank</TargetDatabaseName>
     <DeployScriptFileName>DataBank.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=13.82.48.139;Persist Security Info=False;User ID=External;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
-    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
-    <CreateNewDatabase>True</CreateNewDatabase>
+    <TargetConnectionString>Data Source=.;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
   <ItemGroup>
-    <SqlCmdVariable Include="CountriesFilePath">
-      <Value>C:\Users\MrX\Desktop\Modules\DatabaseProject\Data\Countries.csv</Value>
+    <SqlCmdVariable Include="CountriesFileName">
+      <Value>Countries.csv</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="DataBasePath">
+      <Value>C:\Users\MrX\Desktop\Modules\DatabaseProject\Database\Database\Data</Value>
     </SqlCmdVariable>
   </ItemGroup>
 </Project>
