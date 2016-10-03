@@ -5,5 +5,5 @@ param([string] $dacpackPath,
 [string] $targetPassword,
 [bool] $createNewDB)
 {
-    Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\120\sqlpackage.exe" -ArgumentList /Action:Publish /$dacpackPath /$targetDatabaseName /$targetServerName /$targetUser /$targetPassword /$createNewDB
+    Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\120\sqlpackage.exe" -ArgumentList /Action:Publish /Sourcefile:$dacpackPath /TargetDatabaseName:$targetDatabaseName /TargetServerName:$targetServerName /TargetUser:$targetUser /TargetPassword:$targetPassword /p:CreateNewDatabase=$True
 }
