@@ -5,5 +5,5 @@ param([string] $dacpackPath,
 [string] $targetPassword,
 [bool] $createNewDB)
 {
-    Write-Host $dacpackPath
+    Write-Host "Parameters: " $dacpackPath " " + $targetDatabaseName + " " + $targetServerName + " " + $targetUser + " " + $targetPassword + " " + $createNewDB 
 }
