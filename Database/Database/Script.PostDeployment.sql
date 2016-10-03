@@ -11,3 +11,4 @@ Post-Deployment Script Template
 */
 
 :r .\Scripts\Inserts\InsertCountries.sql
+:r .\Scripts\Inserts\InsertReligions.sql

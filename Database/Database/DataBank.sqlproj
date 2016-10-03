@@ -66,10 +66,13 @@
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
     <Build Include="dbo\Tables\Country.sql" />
+    <Build Include="dbo\Tables\Religion.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataBank.publish.xml" />
     <None Include="Scripts\Inserts\InsertCountries.sql" />
+    <None Include="Scripts\Inserts\InsertReligions.sql" />
+    <None Include="Local.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
